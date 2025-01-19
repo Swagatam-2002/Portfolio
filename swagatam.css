@@ -1,0 +1,406 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Body */
+body {
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* Background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 50%;
+    max-width: 450px;
+    height: auto;
+    border-left: 2px double whitesmoke;
+    border-top: 2px dotted whitesmoke;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0 0 35px 10px blue;
+    margin: 2rem auto;
+    display: block;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 0 35px 15px rgb(5, 228, 80);
+    transform: scale(1.05);
+}
+
+/* Headers 2 */
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    display: inline-flex;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.534);
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 35px;
+    border-radius: 90px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+    color: aquamarine;
+    box-shadow: 0 0 35px 5px green;
+    transform: scale(1.05);
+}
+
+/* Header Tag Paragraph */
+#header1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+/* Navbar */
+.right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 1rem;
+    margin-left: 500px;
+    padding: 1rem;
+    position: fixed;
+}
+
+.right a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid rgba(29, 170, 153, 0.488);
+    border-radius: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.751);
+    background-color: rgba(0, 0, 0, 0.455);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.right a:hover {
+    color: maroon;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: 0 0 35px 15px rgb(5, 228, 80);
+    transform: scale(1.05);
+}
+
+/* Headers 3 */
+h3{
+    margin-left: 80px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.074);
+}
+tr, td {
+    padding: 35px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Skills Table */
+#header2 tr:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.229);
+    box-shadow: 0 0 35px 10px rgb(5, 228, 80);
+    transform: scale(1.05);
+}
+
+/* Projects Table */
+#header3 tr:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.229);
+    box-shadow: 0 0 35px 10px blue;
+    transform: scale(1.05);
+}
+
+#header3 td div{
+    text-align: left;
+    padding: 25px;
+    font-size: 20px;
+    border-bottom: 1px solid whitesmoke;
+    font-family: "Playfair Display", serif;
+}
+
+#header3 td a{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: inline-flex;
+    border-bottom: 1px dotted whitesmoke;
+    border-left: 1px dotted whitesmoke;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#header3 td a:hover{
+    color: maroon;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: 0 0 35px 15px lightgreen;
+    transform: scale(1.05);
+}
+
+/* Achieve Table */
+#header4 td{
+    text-align: left;
+    padding: 35px;
+    font-size: 25px;
+    border-bottom: 2px solid whitesmoke;
+    font-family: "Playfair Display", serif;
+}
+
+#header4 tr:hover{
+    color: white;
+    background-color: rgba(78, 20, 185, 0.744);
+    box-shadow: 0 0 35px 10px rgba(255, 0, 47, 0.797);
+    transform: scale(1.05);
+}
+
+#header4 td a{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: paleturquoise;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: inline-flex;
+    border-top: 1px dotted whitesmoke;
+    border-right: 1px dotted whitesmoke;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#header4 td a:hover{
+    color: lemonchiffon;
+    background-color: rgba(13, 233, 249, 0.586);
+    box-shadow: 0 0 35px 15px rgb(6, 251, 6);
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skill-container {
+    max-width: 600px;
+    margin: 80px;
+    padding: 1rem;
+    background: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    transition: width 0.5s ease-in-out;
+}
+
+.skill-rating{
+    right: 10px;
+    top: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+}
+
+.skill-container:hover{
+    box-shadow: 0 0 35px 10px blue;
+    transform: scale(1.05);
+}
+
+/* Contact Tables */
+#header5 td{
+    text-align: left;
+    padding: 35px;
+    border-bottom: 1px dotted #e0e0e0;
+    border-top: 1px dotted #e0e0e0;
+    font-family: "Playfair Display", serif;
+}
+
+#header5 img{
+    width: 80px;
+    height: 50px;
+    margin-left: 50px;
+    display: inline-flex;
+    background-color: rgba(245, 245, 245, 0.505);
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#header5 img:hover{
+    background-color: gray;
+    box-shadow: 0 0 35px 15px yellow;
+    transform: scale(2.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #13131393;
+    font-size: 20px;
+}
+
+/* Responsiveness for Tablet types */
+@media screen and (max-width: 1000px) {
+    h2 {
+        font-size: 40px;
+        margin-left: 70px;
+        margin-top: 150px;
+    }
+    h3{
+        margin-left: 80px;
+        font-size: 30px;
+    }
+    #header1 p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    table {
+        font-size: 1rem;
+    }
+    .profile-pic {
+        width: 50%;
+    }
+    .right {
+        margin-left: 200px;
+        gap: 0.5rem;
+    }
+    #header3 td div{
+        font-size: 15px;
+    }
+    #header3 td a, #header4 td a{
+        font-size: 15px;
+    }
+    #header4 td{
+        font-size: 20px;
+    }
+    #header5 td{
+        text-align: left;
+        padding: 15px;
+        border-bottom: 2px dotted #e0e0e0;
+        border-top: 2px dotted #e0e0e0;
+        font-family: "Playfair Display", serif;
+    }
+    #header5 img{
+        width: 40px;
+        height: 25px;
+        margin-left: 40px;
+        display: inline-flex;
+        background-color: rgba(245, 245, 245, 0.505);
+        border-radius: 50%;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+}
+
+/* Responsiveness for Mobile types */
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 120px;
+        padding: 15px;
+        box-shadow: 0 0 35px 5px green;
+    }
+    h3{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    .right {
+        font-size: 1rem;
+        margin-left: 60px;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+    .profile-pic {
+        width: 50%;
+    }
+    #header3 td div{
+        font-size: 10px;
+    }
+    #header3 td a, #header4 td a{
+        font-size: 10px;
+    }
+    #header4 td{
+        font-size: 10px;
+    }
+    #header5 td{
+        padding: 5px;
+    }
+    #header5 img{
+        width: 20px;
+        height: 12px;
+        margin-left: 20px;
+        display: inline-flex;
+        background-color: rgba(245, 245, 245, 0.505);
+        border-radius: 50%;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+
+/* Responsiveness for Other small device types */
+@media screen and (max-width: 360px){
+    h2 {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 200px;
+    }
+}

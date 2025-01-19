@@ -137,12 +137,52 @@ tr, td {
     transform: scale(1.05);
 }
 
+.second ul{
+    display: none;
+}
+
+table tr:hover .second span{
+    display: none;
+}
+
+table tr:hover .second ul{
+    display: inline;
+}
+
+table tr:not(:hover) .second span{
+    display: inline;
+}
+
+table tr:not(:hover) .second ul{
+    display: none;
+}
+
 /* Projects Table */
 #header3 tr:hover{
     color: white;
     background-color: rgba(255, 255, 255, 0.229);
     box-shadow: 0 0 35px 10px blue;
     transform: scale(1.05);
+}
+
+.third .perm{
+    display: none;
+}
+
+table tr:hover .third .temp{
+    display: none;
+}
+
+table tr:hover .third .perm{
+    display: inline;
+}
+
+table tr:not(:hover) .third .temp{
+    display: inline;
+}
+
+table tr:not(:hover) .third .perm{
+    display: none;
 }
 
 #header3 td div{
@@ -189,6 +229,26 @@ tr, td {
     background-color: rgba(78, 20, 185, 0.744);
     box-shadow: 0 0 35px 10px rgba(255, 0, 47, 0.797);
     transform: scale(1.05);
+}
+
+.fourth .perm{
+    display: none;
+}
+
+table tr:hover .fourth .temp{
+    display: none;
+}
+
+table tr:hover .fourth .perm{
+    display: inline;
+}
+
+table tr:not(:hover) .fourth .temp{
+    display: inline;
+}
+
+table tr:not(:hover) .fourth .perm{
+    display: none;
 }
 
 #header4 td a{
@@ -271,7 +331,7 @@ tr, td {
 }
 
 #header5 img{
-    width: 80px;
+    width: 60px;
     height: 50px;
     margin-left: 50px;
     display: inline-flex;
@@ -330,14 +390,10 @@ footer {
         font-size: 20px;
     }
     #header5 td{
-        text-align: left;
         padding: 15px;
-        border-bottom: 2px dotted #e0e0e0;
-        border-top: 2px dotted #e0e0e0;
-        font-family: "Playfair Display", serif;
     }
     #header5 img{
-        width: 40px;
+        width: 30px;
         height: 25px;
         margin-left: 40px;
         display: inline-flex;
@@ -383,13 +439,17 @@ footer {
         padding: 5px;
     }
     #header5 img{
-        width: 20px;
+        width: 15px;
         height: 12px;
         margin-left: 20px;
         display: inline-flex;
         background-color: rgba(245, 245, 245, 0.505);
         border-radius: 50%;
         transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .skill-container{
+        box-shadow: 0 0 35px 10px blue;
+        transform: scale(1.05);
     }
     footer{
         font-size: 10px;

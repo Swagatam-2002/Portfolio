@@ -357,7 +357,7 @@ footer {
 }
 
 /* Responsiveness for Tablet types */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
     h2 {
         font-size: 40px;
         margin-left: 70px;
@@ -379,7 +379,7 @@ footer {
         width: 50%;
     }
     .right {
-        margin-left: 200px;
+        margin-left: 150px;
         gap: 0.5rem;
     }
     #header3 td div{
@@ -413,7 +413,7 @@ footer {
     h2 {
         font-size: 15px;
         margin-left: 20px;
-        margin-top: 120px;
+        margin-top: 80px;
         padding: 15px;
         box-shadow: 0 0 35px 5px green;
     }
@@ -422,8 +422,12 @@ footer {
         font-size: 20px;
     }
     .right {
-        font-size: 1rem;
-        margin-left: 60px;
+        margin-left: 5px;
+    }
+    .right a {
+        padding: 6px 8px;
+        font-size: 10px;
+        border-radius: 12px;
     }
     table {
         font-size: 0.9rem;
@@ -465,8 +469,13 @@ footer {
 /* Responsiveness for Other small device types */
 @media screen and (max-width: 360px){
     h2 {
-        font-size: 20px;
-        margin-left: 20px;
-        margin-top: 200px;
+        font-size: 10px;
+    }
+    .right{
+        margin-left: 2px;
+    }
+    .right a {
+        padding: 7px;
+        font-size: 8px;
     }
 }

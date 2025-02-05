@@ -72,6 +72,7 @@ h2:hover {
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     margin-left: 50px;
+    text-align: center;
 }
 
 /* Navbar */
@@ -106,15 +107,15 @@ h2:hover {
 
 /* Headers 3 */
 h3{
-    margin-left: 180px;
     margin-top: 50px;
     font-size: 35px;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
 /* Tables */
 table {
-    width: 90%;
+    width: 70%;
     margin: 1rem auto;
     border-collapse: collapse;
     font-size: 30px;
@@ -125,7 +126,7 @@ table {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.074);
 }
 tr, td {
-    padding: 35px;
+    padding: 45px;
     border-bottom: 1px solid #e0e0e0;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -219,7 +220,7 @@ table tr:not(:hover) .third .perm{
 /* Achieve Table */
 #header4 td{
     text-align: left;
-    padding: 35px;
+    padding: 45px;
     font-size: 25px;
     border-bottom: 2px solid whitesmoke;
     font-family: "Playfair Display", serif;
@@ -278,7 +279,7 @@ table tr:not(:hover) .fourth .perm{
 .skill-container {
     max-width: 600px;
     margin: 60px;
-    margin-left: 300px;
+    margin-left: 450px;
     padding: 1rem;
     background: black;
     border-radius: 10px;
@@ -364,7 +365,6 @@ footer {
         margin-top: 150px;
     }
     h3{
-        margin-left: 140px;
         font-size: 30px;
     }
     #header1 p{
@@ -418,8 +418,10 @@ footer {
         box-shadow: 0 0 35px 5px green;
     }
     h3{
-        margin-left: 120px;
         font-size: 20px;
+    }
+    section{
+        text-align: center;
     }
     .right {
         margin-left: 5px;

@@ -1,270 +1,289 @@
-<!-- My Portfolio -->
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Head Tag -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the portfolio of Swagatam Ghosh, showcasing skills, projects, and contact information. Explore my achievements and connect with me through my social links.">
-    <meta name="keywords" content="Swagatam Ghosh, Narula Institute of Technology, Narula, ECE, BTech 4th Year, portfolio, Garden Reach, web developer, skills, projects, contact, social media, LinkedIn, GitHub">
+    <meta name="description" content="Portfolio of Swagatam Ghosh, showcasing technical skills, academic projects, achievements, and contact information.">
+    <meta name="keywords" content="Swagatam Ghosh, portfolio, web developer, Python developer, electronics engineering, projects, achievements">
     <meta name="author" content="Swagatam Ghosh">
-    <meta name="copyright" content="&copy; 2025 Swagatam Ghosh">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Swagatam Ghosh Portfolio">
-    <meta property="og:url" content="https://swagatam.vercel.app/">
-    <meta property="og:description" content="Explore Swagatam Ghosh's skills, projects, and professional journey. Connect through various social platforms.">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Swagatam Ghosh Portfolio">
     <title>Swagatam Ghosh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="logo-pic.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- Body Tag -->
 <body>
-    <header>
-
-        <!-- Navbar -->
-        <nav>
-            <div class="right">
-                <a href="#header1">About</a>
-                <a href="#header2">Skills</a>
-                <a href="#header3">Projects</a>
-                <a href="#header4">Achievements</a>
-                <a href="#header5">Contact</a>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="#top" aria-label="Swagatam Ghosh home">
+                <span>SG</span>
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- About -->
-    <section id="header1">
-        <h2>Swagatam Ghosh</h2>
-        <img src="about.jpeg" alt="Background Image" class="background">
-        <img src="My_pic__1_-removebg-preview.png" alt="My Picture" class="profile-pic">
-        <div class="about">
-            <p><i>Hometown:</i> Garden Reach, Kolkata</p><br>
-            <p>B.Tech 4th Year</p><br>
-            <p>Electronics and Communication Engineering (ECE)</p><br>
-            <p>Narula Institute of Technology (NiT)</p><br>
-            <p><i>Secondary & High Secondary:</i> Mitra Institution, Bhowanipur</p><br>
-            <p>Ambitious in <em style="color: rgb(226, 58, 241);">Sports</em> , Love to <em style="color: aqua;">Draw</em> , 
-                Passionate in <em style="color: lightgreen;">Singing</em></p><br>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy reveal">
+                    <h1>Hi, I’m <span>Swagatam Ghosh</span></h1>
+                    <p class="lead">
+                        B.Tech student in Electronics and Communication Engineering at Narula Institute of Technology, focused on building practical and impactful solutions using Python, web technologies, and technical problem-solving.
+                    </p>
+                    <div class="cta-row">
+                        <a class="primary-btn" href="#projects">View Projects</a>
+                        <a class="secondary-btn" href="#contact">Let’s Connect</a>
+                    </div>
+                    <ul class="hero-metrics">
+                        <li><strong>4+</strong><span>Academic projects</span></li>
+                        <li><strong>1</strong><span>Paper publication</span></li>
+                        <li><strong>3+</strong><span>Core skill areas</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="portrait-card">
+                        <div class="glow-ring"></div>
+                        <img src="My_pic__1_-removebg-preview.png" alt="Swagatam Ghosh portrait">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About Me</p>
+                    <h2>Driven by learning, creativity, and technology.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <p>
+                            I am a passionate engineering student from Garden Reach, Kolkata, with a strong interest in programming, electronics, and innovative development. I enjoy building practical applications that solve real-world challenges and improve user experience.
+                        </p>
+                        <p>
+                            My academic journey has strengthened my foundation in Python, C, Java, MySQL, DBMS, and web development concepts, while also sharpening my curiosity for research, design thinking, and product development.
+                        </p>
+                    </div>
+
+                    <div class="info-panel reveal">
+                        <div class="info-row">
+                            <span>Education</span>
+                            <strong>B.Tech in ECE</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Institution</span>
+                            <strong>Narula Institute of Technology</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Hometown</span>
+                            <strong>Garden Reach, Kolkata</strong>
+                        </div>
+                        <div class="info-row">
+                            <span>Schooling</span>
+                            <strong>Mitra Institution, Bhowanipur</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Core Skills</p>
+                    <h2>Tools, languages, and technical strengths.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <h3>Core Concepts</h3>
+                        <ul>
+                            <li>Data Structures</li>
+                            <li>DBMS</li>
+                            <li>OOPs</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Featured Work</p>
+                    <h2>Academic projects that reflect my technical curiosity.</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-tag">Research</span>
+                            <h3>Sound Energy to Electrical Energy Conversion</h3>
+                        </div>
+                        <p>
+                            An experimental study focused on harvesting sound energy and converting it into usable electrical energy for noisy environments such as traffic junctions and industrial sites.
+                        </p>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-tag">Python</span>
+                            <h3>Expense Tracker with MySQL Integration</h3>
+                        </div>
+                        <p>
+                            Built a Python-based GUI expense manager using Tkinter and MySQL to manage transactions, filter data, edit entries, and generate summaries by category and month.
+                        </p>
+                        <a href="https://drive.google.com/file/d/17gfYvotPSnepNf1SUwbbFHMBSkwGpLrV/view" target="_blank">Video demo</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-tag">AI Assistant</span>
+                            <h3>Intelligent Alexa using Python</h3>
+                        </div>
+                        <p>
+                            Developed a voice-enabled assistant using Python, Tkinter, SpeechRecognition, and utility libraries to handle voice commands, browsing, jokes, and time-based actions.
+                        </p>
+                        <a href="https://drive.google.com/file/d/16hAUVvOIOZgnn4kURpIrP9P7a8i3KtZY/view" target="_blank">Video demo</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-tag">Utility App</span>
+                            <h3>Phone Number Info Tracker</h3>
+                        </div>
+                        <p>
+                            Designed an application to retrieve a phone number’s location and other basic information through a GUI and API-driven workflow using Python.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1f2Ki9Wxkv-T4AcY8reVZ28x0XXIdUEgA/view" target="_blank">Video demo</a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-tag">Game Dev</span>
+                            <h3>Basic Space Shooter Game</h3>
+                        </div>
+                        <p>
+                            Crafted a simple arcade shooter to understand animation loops, collision mechanics, and interactive gameplay design in Python.
+                        </p>
+                        <a href="https://drive.google.com/file/d/14yzzsiNumQamLoTvqlD72w0W56mavaeh/view" target="_blank">Video demo</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section alt-bg">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Achievements</p>
+                    <h2>Milestones that reflect sustained effort and recognition.</h2>
+                </div>
+
+                <div class="timeline reveal">
+                    <article class="timeline-item">
+                        <span class="timeline-year">2024</span>
+                        <div class="timeline-content">
+                            <h3>Published research paper</h3>
+                            <p>Paper titled “Sound Energy to Electrical Energy Conversion: An Experimental Study” in the Journal of Emerging Technologies and Innovative Research (JETIR).</p>
+                            <a href="https://drive.google.com/file/d/1qdxo4LYLQjWb8fkDPETvpfvJCpUO99SS/view?usp=drive_link" target="_blank">Paper link</a>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-year">2024</span>
+                        <div class="timeline-content">
+                            <h3>Certification of publication</h3>
+                            <p>Received recognition from JETIR for achieving 93% uniqueness in the published work.</p>
+                            <a href="https://drive.google.com/file/d/1nB2NrI9iuudxjMXww31DxQ41Xd1dU7Os/view?usp=drive_link" target="_blank">Certificate</a>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-year">2023</span>
+                        <div class="timeline-content">
+                            <h3>Silver medal in NPTEL</h3>
+                            <p>Achieved a Silver Medal score in “Problem Solving Through Programming in C”.</p>
+                            <a href="https://drive.google.com/file/d/1rgJDc_7BMCJZuHLpnTf59-Z8YT1O8Xw8/view?usp=drive_link" target="_blank">Certificate</a>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-year">2022</span>
+                        <div class="timeline-content">
+                            <h3>Group project certification</h3>
+                            <p>Recognized for contribution in a group project at the International Conference on Analytical and Computational Electronics (ICACE).</p>
+                            <a href="https://drive.google.com/file/d/1jZSyhsuEDk29wyJaNIFTEuO0bQEeORUb/view?usp=drive_link" target="_blank">Certificate</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Contact</p>
+                    <h2>Let’s build something meaningful together.</h2>
+                </div>
+
+                <div class="contact-grid reveal">
+                    <a class="contact-card" href="mailto:swagatamghosh0902@gmail.com" target="_blank" rel="noreferrer">
+                        <img src="Mail.png" alt="Email icon">
+                        <span>Email</span>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/swagatam-ghosh-150902sg/" target="_blank" rel="noreferrer">
+                        <img src="Ldin.png" alt="LinkedIn icon">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="contact-card" href="https://github.com/Swagatam-2002" target="_blank" rel="noreferrer">
+                        <img src="Ghub.png" alt="GitHub icon">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© <span id="current-year"></span> Swagatam Ghosh. All rights reserved.</p>
         </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="header2">
-        <h2>My Skillset</h2>
-        <table>
-            <tr>
-                <td>Programming Language</td>
-                <td class="second">
-                    <span>Click to see</span>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>MySQL</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Python Development</td>
-                <td class="second">
-                    <span>Click to see</span>
-                    <ul>
-                        <li>Python Database Connectivity (PDBC)</li>
-                        <li>Python GUI Development</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td class="second">
-                    <span>Click to see</span>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Additional</td>
-                <td class="second">
-                    <span>Click to see</span>
-                    <ul>
-                        <li>Data Structures (DSA)</li>
-                        <li>DBMS</li>
-                        <li>Object Oriented Programming</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <h3>Overall Overview</h3>
-        <div class="skill-container">
-            <div class="skill">
-                <div class="skill-name">Programming Language</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 90%;">
-                        <span class="skill-rating">90%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">Python Development</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 85%;">
-                        <span class="skill-rating">85%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">Web Development</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 85%;">
-                        <span class="skill-rating">85%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-name">Additional</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: 80%;">
-                        <span class="skill-rating">80%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="header3">
-        <h2>My Academic Projects</h2>
-        <table>
-            <tr>
-                <td>Sound Energy to Electrical Energy Conversion: An Experimental Study
-                    <div class="third">
-                        <p class="temp">Click to see Description</p>
-                        <p class="perm">This project aims to convert sound energy into electrical energy using sound sensors. This energy source could be
-                            particularly useful in high-noise areas like airports, industries, and traffic junctions.</p>
-                    </div>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Expense Tracker with Python GUI and MySQL Integration
-                    <div class="third">
-                        <p class="temp">Click to see Description</p>
-                        <p class="perm">This Expense Tracker Application uses Python (Tkinter) and MySQL to manage expenses. Users can add, view,
-                        edit, filter, and delete expenses. It generates summarized reports showing totals and counts per category/month.</p>
-                    </div>
-                </td>
-                <td><a href="https://drive.google.com/file/d/17gfYvotPSnepNf1SUwbbFHMBSkwGpLrV/view" target="_blank">Video Link</a></td>
-            </tr>
-            <tr>
-                <td>
-                    An Intelligent Alexa using Python
-                    <div class="third">
-                        <p class="temp">Click to see Description</p>
-                        <p class="perm">Developed An Intelligent Alexa using Python, integrating Tkinter for a user-friendly interface, SpeechRecognition for 
-                        seamless voice commands, and modules like pywhatkit, pyjoke, webbrowser and datetime etc for enhanced functionality.</p>
-                    </div>
-                </td>
-                <td><a href="https://drive.google.com/file/d/16hAUVvOIOZgnn4kURpIrP9P7a8i3KtZY/view" target="_blank">Video Link</a></td>
-            </tr>
-            <tr>
-                <td>Tracking Location and Basic info of any Phone Number
-                    <div class="third">
-                        <p class="temp">Click to see Description</p>
-                        <p class="perm">Utilizing Python, GUI, and API integration, it offers real-time location tracking and comprehensive information retrieval.</p>
-                    </div>
-                </td>
-                <td><a href="https://drive.google.com/file/d/1f2Ki9Wxkv-T4AcY8reVZ28x0XXIdUEgA/view" target="_blank">Video Link</a></td>
-            </tr>
-            <tr>
-                <td>
-                    Basic Space Shooter Game using Python
-                    <div class="third">
-                        <p class="temp">Click to see Description</p>
-                        <p class="perm">This project was an incredible learning experience, allowing us to understand game mechanics, animation, and 
-                        user interaction within a Python environment.</p>
-                    </div>
-                </td>
-                <td><a href="https://drive.google.com/file/d/14yzzsiNumQamLoTvqlD72w0W56mavaeh/view" target="_blank">Video Link</a></td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Achievements -->
-    <section id="header4">
-        <h2>My Achievements</h2>
-        <table>
-            <tr>
-                <td class="fourth">
-                    <p class="temp">Paper Publication on .....</p>
-                    <p class="perm">Paper publication on <strong>Journal of Emerging Technologies and Innovative Research (JETIR)</strong>
-                    of the project named <strong>Sound Energy to Electrical Energy Conversion: An Experimental Study</strong></p>
-                </td>
-                <td><a href="https://drive.google.com/file/d/1qdxo4LYLQjWb8fkDPETvpfvJCpUO99SS/view?usp=drive_link" target="_blank">Paper Link</a></td>
-            </tr>
-            <tr>
-                <td class="fourth">
-                    <p class="temp">Paper Publish Certification on .....</p>
-                    <p class="perm">Certified from <strong>Journal of Emerging Technologies and Innovative Research (JETIR)</strong> for the project
-                    for achieving <strong>93% Uniqueness</strong></p>
-                </td>
-                <td><a href="https://drive.google.com/file/d/1nB2NrI9iuudxjMXww31DxQ41Xd1dU7Os/view?usp=drive_link" target="_blank">Certificate Link</a></td>
-            </tr>
-            <tr>
-                <td class="fourth">
-                    <p class="temp">Achievement on .....</p>
-                    <p class="perm"><strong>Achieved Silver Medal Score</strong> on <em>Problem Solving Through Programming in C</em> from NPTEL</p> 
-                </td>
-                <td><a href="https://drive.google.com/file/d/1rgJDc_7BMCJZuHLpnTf59-Z8YT1O8Xw8/view?usp=drive_link" target="_blank">Certificate Link</a></td>
-            </tr>
-            <tr>
-                <td class="fourth">
-                    <p class="temp">Group Project Certification on .....</p>
-                    <p class="perm">Certified in a Group Project Contribution from <strong>International Conference on Analytical And 
-                    Computational Electronics (ICACE)</strong> in 2022</p>
-                </td>
-                <td><a href="https://drive.google.com/file/d/1jZSyhsuEDk29wyJaNIFTEuO0bQEeORUb/view?usp=drive_link" target="_blank">Certificate Link</a></td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Contact -->
-    <section id="header5">
-        <h2>Contact Me</h2><br>
-        <table>
-            <tr>
-                <td><a href="mailto: swagatamghosh0902@gmail.com" target="_blank"><img src="Mail.png" alt="Gmail"></a></td>
-                <td><a href="https://www.facebook.com/profile.php?id=100071307709902" target="_blank"><img src="Fb.png" alt="Facebook"></a></td>
-                <td><a href="https://www.instagram.com/i_m.swagatam/" target="_blank"><img src="Ig.png" alt="Instagram"></a></td>
-                <td><a href="https://www.linkedin.com/in/swagatam-ghosh-150902sg/" target="_blank"><img src="Ldin.png" alt="LinkedIn"></a></td>
-                <td><a href="https://github.com/Swagatam-2002" target="_blank"><img src="Ghub.png" alt="GitHub"></a></td>
-            </tr>
-        </table>  
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        &copy; Swagatam Ghosh || All Rights Reserved
     </footer>
 
-    <!--Scroll to the first header when the page loads-->
-    <script>
-        window.onload = function () {
-            const firstHeader = document.getElementById("header1");
-            firstHeader.scrollIntoView({ behavior: "smooth" });
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
